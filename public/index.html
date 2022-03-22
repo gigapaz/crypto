@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link rel="icon" href="icon.png">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+		<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+		<script type="text/javascript" src="metamask.js"></script>
+			
+		<title>Yustura - Capture the Flag</title>
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-92002808-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+
+	<body>
+		<script>
+			
+
+
+
+
+		</script>
+
+		<canvas id="canvas">
+			Your browser does not support the HTML5 canvas tag.
+		</canvas>
+
+		<div id="chat_output"></div>
+		<form id="chat_form">
+			<input id="chat_input" type="text" placeholder="have a chat" autocomplete="off" autofocus="autofocus">
+		</form>
+
+		<div id="splash">
+			<p id="splash_text">Yustura Multiplayer Game</p>
+			<input class="paz"  onclick="login();" value="Please Connect your Metamask">
+
+			<form id="splash_form">
+				
+				
+				<input id="splash_input" value="" type="text"  placeholder="Please use your username" required="required">
+				<script>logOut();</script>
+				<input id="splash_button" class="button" type="submit" value="Join">
+			</form>
+		</div>
+
+		
+	
+		
+
+		
+		<div id="message-container" style="visibility:hidden">
+			<p id="message">
+				Hi friends!
+				If you want to share your ideas for the future of tanqs, you can fill out
+				<a href="https://goo.gl/forms/Izp34tFiPXBMKFtC2">this form</a>. Thanks!
+			</p>
+		</div>
+		
+
+		<div id="ad_container" style="visibility: hidden">
+		</div>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="./shared/shared.js"></script>
+		<script src="./client/particles.js"></script>
+		<script src="./client/textfx.js"></script>
+		<script src="./client/world.js"></script>
+		<script src="./client/graphics.js"></script>
+		<script src="./client/client.js"></script>
+		<script src="./client/game.js"></script>
+	</body>
+</html>

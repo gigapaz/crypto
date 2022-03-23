@@ -3,7 +3,8 @@ var path = require('path');
 var app = express();
 var http = require('http').Server(app);
 
-var config = require('./server/config.json');
+var config = require(path.resolve(__dirname, 'server/config.json'));
+
 config.password = config.password || "supersecret";
 
 // Serve the public folder statically
